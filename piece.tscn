@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://kjcowo77gq53"]
+
+[ext_resource type="Script" uid="uid://bfs8mfsp5sbig" path="res://grabbable.gd" id="1_3makh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hisf2"]
+size = Vector2(542, 487)
+
+[node name="Piece" type="Node2D"]
+
+[node name="GrabbableItem" type="Area2D" parent="."]
+position = Vector2(20, 24)
+script = ExtResource("1_3makh")
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrabbableItem"]
+position = Vector2(261, 233.5)
+shape = SubResource("RectangleShape2D_hisf2")
