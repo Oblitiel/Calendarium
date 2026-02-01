@@ -7,8 +7,6 @@ var is_grabbed : bool
 var grab_position : Vector2
 
 func _ready() -> void:
-	collision_layer = collision_layer | 1
-	
 	add_to_group("Grabbable")
 	
 	z_index = index
