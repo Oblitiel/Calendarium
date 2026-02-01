@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cs6j1nqbcogyi"]
 
-[ext_resource type="Script" uid="uid://bsjfwqipnrf88" path="res://grab_controller_toggle.gd" id="1_ia1lp"]
+[ext_resource type="Script" uid="uid://blavddmtriurf" path="res://grab_controller_hold.gd" id="1_ia1lp"]
 [ext_resource type="PackedScene" uid="uid://cn1kxj4agga2x" path="res://grabbable_item_test.tscn" id="1_uhqqe"]
 
 [node name="Node2D" type="Node2D"]
