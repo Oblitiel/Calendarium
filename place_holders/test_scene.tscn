@@ -29,6 +29,7 @@ position = Vector2(408, 372)
 [node name="ItemSlot" type="Area2D" parent="."]
 position = Vector2(615, 401)
 script = ExtResource("3_hpxmh")
+positionig_time = 0.3
 metadata/_custom_type_script = "uid://cusyxuw8b80iq"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemSlot"]
