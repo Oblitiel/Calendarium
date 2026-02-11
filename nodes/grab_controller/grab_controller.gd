@@ -3,6 +3,7 @@ class_name GrabController
 extends Node2D
 
 var grabbed_item : GrabbableItem = null
+@export_flags_2d_physics var grabbable_items_collisions : int = 1
 
 @abstract func grab_logic(grab_point : Vector2, event : InputEvent) -> void
 
@@ -20,22 +21,27 @@ func get_grabbable_item_in_point(point : Vector2) -> GrabbableItem:
 	
 	parameters.collide_with_areas = true
 	parameters.collide_with_bodies = false
-	parameters.collision_mask = 1
+	parameters.collision_mask = grabbable_items_collisions
 	parameters.position = point
 	
-	var clicked_objects = get_world_2d().direct_space_state.intersect_point(parameters)
+	var grabbable_items = get_world_2d().direct_space_state.intersect_point(parameters)
 	
-	if clicked_objects.size() < 1 :
-		return null
-	
-	var colliders : Array = clicked_objects.map(
+	grabbable_items = grabbable_items.map(
 		func(obj):
 			return obj.collider
 	)
 	
-	colliders.sort_custom(_sort_z_idex)
+	grabbable_items = grabbable_items.filter(
+		func(obj):
+			return obj is GrabbableItem
+	)
 	
-	return colliders[0]
+	if grabbable_items.size() < 1 :
+		return null
+	
+	grabbable_items.sort_custom(_sort_z_idex)
+	
+	return grabbable_items[0]
 
 func _sort_z_idex(a:Node2D, b:Node2D) -> bool:
 	return a.z_index > b.z_index

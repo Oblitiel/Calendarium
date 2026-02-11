@@ -3,12 +3,13 @@ extends Area2D
 
 static var index = 1
 
+signal grabbed()
+signal released()
+
 var is_grabbed : bool
 var grab_position : Vector2
 
 func _ready() -> void:
-	collision_layer = collision_layer | 1
-	
 	add_to_group("Grabbable")
 	
 	z_index = index
@@ -23,9 +24,13 @@ func grab(local_position : Vector2 = get_local_mouse_position()) -> void:
 	
 	is_grabbed = true
 	grab_position = local_position
+	
+	grabbed.emit()
 
 func release() -> void:
 	is_grabbed = false
+	
+	released.emit()
 
 func arrange_z_index() -> void:
 	var items = get_tree().get_nodes_in_group("Grabbable")
