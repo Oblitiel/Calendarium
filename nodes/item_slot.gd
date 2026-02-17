@@ -27,10 +27,17 @@ func _update_target_position():
 func filter_target(posible_targets : Array) -> GrabbableItem:
 	if target and not target.is_grabbed:
 		return target
-	for posible_target in posible_targets:
-		if posible_target is GrabbableItem and not posible_target.is_grabbed:
-			return posible_target
-	return null
+	
+	posible_targets = posible_targets.filter(func(t):return t is GrabbableItem and not t.is_grabbed)
+	
+	if posible_targets.size() < 1:
+		return null
+	
+	var nearest_target = posible_targets[0]
+	for posi_target in posible_targets:
+		if abs(posi_target.global_position - global_position) < abs(nearest_target.global_position - global_position):
+			nearest_target = posi_target
+	return nearest_target
 
 func position_item(item : GrabbableItem) -> void:
 	var tween = item.create_tween()
