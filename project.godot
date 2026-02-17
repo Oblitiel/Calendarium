@@ -12,7 +12,6 @@ config_version=5
 
 config/name="Calendarium"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://place_holders/icon.svg"
 
 [input]
 
