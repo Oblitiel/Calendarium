@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpt42lgp2bhq4"]
+
+[ext_resource type="Script" uid="uid://blavddmtriurf" path="res://nodes/grab_controller/grab_controller_hold.gd" id="1_atnxp"]
+[ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/calendarium_back_box.tscn" id="2_2apt8"]
+[ext_resource type="Script" uid="uid://tghkj01pqbjj" path="res://scenes/piece_generator.gd" id="3_tpcom"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_atnxp")
+
+[node name="CalendariumBackBox" parent="." instance=ExtResource("2_2apt8")]
+position = Vector2(87, 42)
+
+[node name="Camera2D" type="Camera2D" parent="CalendariumBackBox"]
+scale = Vector2(0.26207134, -0.17261687)
+zoom = Vector2(6, 6)
+
+[node name="Piece Generator" type="Node2D" parent="."]
+script = ExtResource("3_tpcom")
+
+[node name="Start" type="Marker2D" parent="Piece Generator"]
+position = Vector2(170, 82)
+
+[node name="Finish" type="Marker2D" parent="Piece Generator"]
+position = Vector2(4, 83)
