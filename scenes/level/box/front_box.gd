@@ -18,4 +18,4 @@ func _on_mouse_click(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 			tween.tween_property(self,"global_position",start_marker.global_position,positionig_time)
 
 func check_win():
-	pass
+	print($"../SolutionVerifier".verify_date())

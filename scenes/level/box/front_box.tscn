@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cxvw5rkiipuxd"]
 
-[ext_resource type="Script" uid="uid://drlga23le6p4i" path="res://scenes/front_box.gd" id="1_1dmoo"]
+[ext_resource type="Script" uid="uid://drlga23le6p4i" path="res://scenes/level/box/front_box.gd" id="1_1dmoo"]
 [ext_resource type="Texture2D" uid="uid://bigmahw86iayl" path="res://assets/calendarium_front_box.png" id="2_5lmp3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2apt8"]

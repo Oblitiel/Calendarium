@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bntf0dpa7ytwl"]
 
 [ext_resource type="Texture2D" uid="uid://dd7nvirv3aul6" path="res://assets/calendarium_back_box.png" id="1_vmode"]
-[ext_resource type="PackedScene" uid="uid://buwpgw8imuygx" path="res://scenes/item_slot.tscn" id="2_0oq6v"]
+[ext_resource type="PackedScene" uid="uid://buwpgw8imuygx" path="res://scenes/level/box/item_slot.tscn" id="2_0oq6v"]
 
 [node name="CalendariumBackBox" type="Sprite2D"]
 texture = ExtResource("1_vmode")

@@ -19,5 +19,14 @@ vframes = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_iq6nv")
 
-[node name="Subpiece" parent="." instance=ExtResource("3_i7cdl")]
+[node name="SubpieceBL" parent="." instance=ExtResource("3_i7cdl")]
 position = Vector2(4, 6)
+
+[node name="SubpieceTL" parent="." instance=ExtResource("3_i7cdl")]
+position = Vector2(4, -6)
+
+[node name="SubpieceTR" parent="." instance=ExtResource("3_i7cdl")]
+position = Vector2(-4, -6)
+
+[node name="SubpieceBR" parent="." instance=ExtResource("3_i7cdl")]
+position = Vector2(-4, 6)

@@ -7,4 +7,9 @@ extends GrabbableItem
 		$CalendariumPieces.frame = image
 		piece_composition = load("res://resources/piece_composition/Piece"+str(value)+".tres")
 
-var piece_composition : PieceComposition
+var piece_composition : PieceComposition:
+	set(value):
+		$SubpieceBL.data=value.bottom_left
+		$SubpieceTL.data=value.top_left
+		$SubpieceTR.data=value.top_right
+		$SubpieceBR.data=value.bottom_right
