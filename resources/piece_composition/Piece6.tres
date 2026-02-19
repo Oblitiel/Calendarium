@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PieceComposition" load_steps=6 format=3 uid="uid://lx28w0r0kkxx"]
+
+[ext_resource type="Resource" uid="uid://boh4y7t7qvjqk" path="res://resources/subpiece_data/top_right/top_right_equal.tres" id="1_6qkkh"]
+[ext_resource type="Resource" uid="uid://dyaup1ts5oh8" path="res://resources/subpiece_data/top_left/top_left_equal.tres" id="2_rigxt"]
+[ext_resource type="Script" uid="uid://b8fkjvppppca4" path="res://resources/piece_composition/piece_composition.gd" id="3_2yfhs"]
+[ext_resource type="Resource" uid="uid://cwjipyga2qafi" path="res://resources/subpiece_data/btm_right/btm_right_black.tres" id="4_sisuy"]
+[ext_resource type="Resource" uid="uid://eygamql5ximq" path="res://resources/subpiece_data/btm_left/btm_left_j.tres" id="5_auoe4"]
+
+[resource]
+script = ExtResource("3_2yfhs")
+top_right = ExtResource("5_auoe4")
+top_left = ExtResource("4_sisuy")
+bottom_right = ExtResource("2_rigxt")
+bottom_left = ExtResource("1_6qkkh")
+metadata/_custom_type_script = "uid://b8fkjvppppca4"

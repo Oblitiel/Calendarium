@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc6mtwdmge1y3"]
+
+[ext_resource type="Script" uid="uid://dsr4i0dxbay3e" path="res://scenes/piece/subpiece.gd" id="1_cespj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s58gp"]
+size = Vector2(8, 12)
+
+[node name="Subpiece" type="Area2D"]
+script = ExtResource("1_cespj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s58gp")
+debug_color = Color(0.70196074, 0, 0.14470991, 0.41960785)
