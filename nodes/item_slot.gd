@@ -18,6 +18,7 @@ func _disconnect_item(area : Area2D):
 	if area is GrabbableItem:
 		area.grabbed.disconnect(_update_target_position)
 		area.released.disconnect(_update_target_position)
+		target = null
 
 func _update_target_position():
 	target = filter_target(get_overlapping_areas())
