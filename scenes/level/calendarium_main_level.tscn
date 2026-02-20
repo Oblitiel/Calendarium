@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cpt42lgp2bhq4"]
+[gd_scene load_steps=8 format=3 uid="uid://cpt42lgp2bhq4"]
 
 [ext_resource type="Script" uid="uid://do54f1ftltir" path="res://scenes/level/calendarium_main_level.gd" id="1_3ctw5"]
 [ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/level/box/calendarium_back_box.tscn" id="2_3ctw5"]
+[ext_resource type="Texture2D" uid="uid://bigmahw86iayl" path="res://assets/calendarium_front_box.png" id="3_0nhnh"]
 [ext_resource type="Script" uid="uid://tghkj01pqbjj" path="res://scenes/piece_generator.gd" id="3_2k7mi"]
 [ext_resource type="PackedScene" uid="uid://cxvw5rkiipuxd" path="res://scenes/level/box/front_box.tscn" id="4_0nhnh"]
 [ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://scenes/level/solution_verifier.gd" id="5_3ctw5"]
@@ -17,6 +18,12 @@ position = Vector2(87, 42)
 [node name="Camera2D" type="Camera2D" parent="CalendariumBackBox"]
 scale = Vector2(0.26207134, -0.17261687)
 zoom = Vector2(6, 6)
+
+[node name="Sprite2D" type="Sprite2D" parent="CalendariumBackBox"]
+modulate = Color(0.23529412, 0.003921569, 0.27058825, 0.33333334)
+z_index = -1
+position = Vector2(3, 3)
+texture = ExtResource("3_0nhnh")
 
 [node name="Piece Generator" type="Node2D" parent="." node_paths=PackedStringArray("star_marker", "finish_marker")]
 script = ExtResource("3_2k7mi")
@@ -56,3 +63,12 @@ position = Vector2(20, 0)
 
 [node name="NumberVerifier4" parent="SolutionVerifier" instance=ExtResource("5_81fc3")]
 position = Vector2(52, 0)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -100
+offset_left = -18.0
+offset_top = -21.0
+offset_right = 198.0
+offset_bottom = 110.0
+mouse_filter = 2
+color = Color(0.56046665, 0.37799996, 0.7, 1)

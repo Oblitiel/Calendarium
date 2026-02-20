@@ -1,6 +1,6 @@
 extends Node2D
 
-var date : String = "1809"
+var date : String = "0000"
 
 func verify_date() -> bool:
 	return (

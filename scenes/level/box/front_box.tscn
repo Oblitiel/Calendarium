@@ -9,6 +9,12 @@ size = Vector2(140, 52)
 [node name="Front Box" type="Node2D"]
 script = ExtResource("1_1dmoo")
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0.23472004, 0.005399995, 0.27, 0.33333334)
+z_index = -100
+position = Vector2(3, 3)
+texture = ExtResource("2_5lmp3")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_5lmp3")
 
