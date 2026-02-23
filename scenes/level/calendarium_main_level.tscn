@@ -75,3 +75,4 @@ mouse_filter = 2
 color = Color(0.56046665, 0.37799996, 0.7, 1)
 
 [node name="Win Animation" parent="." instance=ExtResource("8_0nhnh")]
+position = Vector2(87, 42)
