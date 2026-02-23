@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cpt42lgp2bhq4"]
 
-[ext_resource type="Script" uid="uid://do54f1ftltir" path="res://scenes/level/calendarium_main_level.gd" id="1_3ctw5"]
+[ext_resource type="Script" uid="uid://blavddmtriurf" path="res://nodes/grab_controller/grab_controller_hold.gd" id="1_2k7mi"]
 [ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/level/box/calendarium_back_box.tscn" id="2_3ctw5"]
 [ext_resource type="Texture2D" uid="uid://bigmahw86iayl" path="res://assets/calendarium_front_box.png" id="3_0nhnh"]
 [ext_resource type="Script" uid="uid://tghkj01pqbjj" path="res://scenes/piece_generator.gd" id="3_2k7mi"]
@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://scenes/level/verify_solution/number_verifier.tscn" id="5_81fc3"]
 
 [node name="Level" type="Node2D"]
-script = ExtResource("1_3ctw5")
+script = ExtResource("1_2k7mi")
 metadata/_custom_type_script = "uid://blavddmtriurf"
 
 [node name="CalendariumBackBox" parent="." instance=ExtResource("2_3ctw5")]
