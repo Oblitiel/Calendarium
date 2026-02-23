@@ -13,6 +13,10 @@ config_version=5
 config/name="Calendarium"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
+[autoload]
+
+Game="*res://nodes/game.gd"
+
 [input]
 
 grab={

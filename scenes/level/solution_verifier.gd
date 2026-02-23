@@ -1,11 +1,14 @@
 extends Node2D
 
-var date : String = "0000"
+var date_string : String = "0000"
+
+func _ready() -> void:
+	date_string = Game.get_date_string()
+	Game.solution_verifier = self
 
 func verify_date() -> bool:
-	return (
-		$NumberVerifier1.verify_number(int(date[0])) and 
-		$NumberVerifier2.verify_number(int(date[1])) and
-		$NumberVerifier3.verify_number(int(date[2])) and
-		$NumberVerifier4.verify_number(int(date[3]))
-	)
+	for i in 4:
+		if not get_children()[i].verify_number(int(date_string[i])):
+			return false
+	
+	return true
