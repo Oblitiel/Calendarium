@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cpt42lgp2bhq4"]
+[gd_scene load_steps=9 format=3 uid="uid://cpt42lgp2bhq4"]
 
 [ext_resource type="Script" uid="uid://blavddmtriurf" path="res://nodes/grab_controller/grab_controller_hold.gd" id="1_2k7mi"]
 [ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/level/box/calendarium_back_box.tscn" id="2_3ctw5"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cxvw5rkiipuxd" path="res://scenes/level/box/front_box.tscn" id="4_0nhnh"]
 [ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://scenes/level/solution_verifier.gd" id="5_3ctw5"]
 [ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://scenes/level/verify_solution/number_verifier.tscn" id="5_81fc3"]
+[ext_resource type="PackedScene" uid="uid://b15576d84s1vt" path="res://scenes/level/win_animation.tscn" id="8_0nhnh"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_2k7mi")
@@ -72,3 +73,5 @@ offset_right = 198.0
 offset_bottom = 110.0
 mouse_filter = 2
 color = Color(0.56046665, 0.37799996, 0.7, 1)
+
+[node name="Win Animation" parent="." instance=ExtResource("8_0nhnh")]
