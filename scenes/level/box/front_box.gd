@@ -13,9 +13,6 @@ func _on_mouse_click(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 		
 		if finished:
 			tween.tween_property(self,"global_position",finish_marker.global_position,positionig_time)
-			check_win()
+			Game.check_win()
 		else:
 			tween.tween_property(self,"global_position",start_marker.global_position,positionig_time)
-
-func check_win():
-	pass

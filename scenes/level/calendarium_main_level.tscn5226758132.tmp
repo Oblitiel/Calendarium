@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpt42lgp2bhq4"]
+
+[ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/level/box/calendarium_back_box.tscn" id="2_3ctw5"]
+[ext_resource type="Script" uid="uid://tghkj01pqbjj" path="res://scenes/piece_generator.gd" id="3_2k7mi"]
+[ext_resource type="PackedScene" uid="uid://cxvw5rkiipuxd" path="res://scenes/level/box/front_box.tscn" id="4_0nhnh"]
+[ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://scenes/level/solution_verifier.gd" id="5_3ctw5"]
+[ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://scenes/level/verify_solution/number_verifier.tscn" id="5_81fc3"]
+
+[node name="Level" type="Node2D"]
+metadata/_custom_type_script = "uid://blavddmtriurf"
+
+[node name="CalendariumBackBox" parent="." instance=ExtResource("2_3ctw5")]
+position = Vector2(87, 42)
+
+[node name="Camera2D" type="Camera2D" parent="CalendariumBackBox"]
+scale = Vector2(0.26207134, -0.17261687)
+zoom = Vector2(6, 6)
+
+[node name="Piece Generator" type="Node2D" parent="." node_paths=PackedStringArray("star_marker", "finish_marker")]
+script = ExtResource("3_2k7mi")
+star_marker = NodePath("Start")
+finish_marker = NodePath("Finish")
+
+[node name="Start" type="Marker2D" parent="Piece Generator"]
+position = Vector2(173, 82)
+
+[node name="Finish" type="Marker2D" parent="Piece Generator"]
+position = Vector2(1, 82)
+
+[node name="Front Box" parent="." node_paths=PackedStringArray("start_marker", "finish_marker") instance=ExtResource("4_0nhnh")]
+z_index = 100
+position = Vector2(87, -17)
+start_marker = NodePath("../Start")
+finish_marker = NodePath("../Finish")
+
+[node name="Start" type="Marker2D" parent="."]
+position = Vector2(87, -17)
+
+[node name="Finish" type="Marker2D" parent="."]
+position = Vector2(87, 42)
+
+[node name="SolutionVerifier" type="Node2D" parent="."]
+position = Vector2(87, 42)
+script = ExtResource("5_3ctw5")
+
+[node name="NumberVerifier" parent="SolutionVerifier" instance=ExtResource("5_81fc3")]
+position = Vector2(-52, 0)
+
+[node name="NumberVerifier2" parent="SolutionVerifier" instance=ExtResource("5_81fc3")]
+position = Vector2(-20, 0)
+
+[node name="NumberVerifier3" parent="SolutionVerifier" instance=ExtResource("5_81fc3")]
+position = Vector2(20, 0)
+
+[node name="NumberVerifier4" parent="SolutionVerifier" instance=ExtResource("5_81fc3")]
+position = Vector2(52, 0)

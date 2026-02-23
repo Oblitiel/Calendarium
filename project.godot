@@ -13,6 +13,10 @@ config_version=5
 config/name="Calendarium"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
+[autoload]
+
+Game="*res://nodes/game.gd"
+
 [input]
 
 grab={
@@ -24,6 +28,7 @@ grab={
 [layer_names]
 
 2d_physics/layer_1="grabbable item"
+2d_physics/layer_2="subpiece"
 
 [rendering]
 

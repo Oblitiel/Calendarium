@@ -1,3 +1,4 @@
+class_name GrabControllerHold
 extends GrabController
 
 func _input(event: InputEvent) -> void:

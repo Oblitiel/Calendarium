@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="SubpieceData" load_steps=2 format=3 uid="uid://d02j4yj4pwakm"]
+
+[ext_resource type="Script" uid="uid://ckco58p3b4hx3" path="res://resources/subpiece_data/subpiece_data.gd" id="1_7kjbw"]
+
+[resource]
+script = ExtResource("1_7kjbw")
+metadata/_custom_type_script = "uid://ckco58p3b4hx3"
