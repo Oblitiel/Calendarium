@@ -1,12 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://cpt42lgp2bhq4"]
+[gd_scene load_steps=10 format=3 uid="uid://cpt42lgp2bhq4"]
 
 [ext_resource type="Script" uid="uid://blavddmtriurf" path="res://nodes/grab_controller/grab_controller_hold.gd" id="1_2k7mi"]
 [ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/level/box/calendarium_back_box.tscn" id="2_3ctw5"]
 [ext_resource type="Texture2D" uid="uid://bigmahw86iayl" path="res://assets/calendarium_front_box.png" id="3_0nhnh"]
-[ext_resource type="Script" uid="uid://tghkj01pqbjj" path="res://scenes/piece_generator.gd" id="3_2k7mi"]
 [ext_resource type="PackedScene" uid="uid://cxvw5rkiipuxd" path="res://scenes/level/box/front_box.tscn" id="4_0nhnh"]
 [ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://scenes/level/solution_verifier.gd" id="5_3ctw5"]
 [ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://scenes/level/verify_solution/number_verifier.tscn" id="5_81fc3"]
+[ext_resource type="PackedScene" uid="uid://ikddowsiq53w" path="res://scenes/piece/piece.tscn" id="5_ccote"]
+[ext_resource type="Script" uid="uid://bg7lmyujrau8n" path="res://scenes/piece/piece.gd" id="6_m8y1d"]
 [ext_resource type="PackedScene" uid="uid://b15576d84s1vt" path="res://scenes/level/win_animation.tscn" id="8_0nhnh"]
 
 [node name="Level" type="Node2D"]
@@ -26,16 +27,102 @@ z_index = -1
 position = Vector2(3, 3)
 texture = ExtResource("3_0nhnh")
 
-[node name="Piece Generator" type="Node2D" parent="." node_paths=PackedStringArray("star_marker", "finish_marker")]
-script = ExtResource("3_2k7mi")
-star_marker = NodePath("Start")
-finish_marker = NodePath("Finish")
+[node name="Pieces" type="Node2D" parent="."]
 
-[node name="Start" type="Marker2D" parent="Piece Generator"]
-position = Vector2(173, 82)
+[node name="Piece00" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(27, 30)
+script = ExtResource("6_m8y1d")
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
 
-[node name="Finish" type="Marker2D" parent="Piece Generator"]
-position = Vector2(1, 82)
+[node name="Piece01" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(43, 30)
+script = ExtResource("6_m8y1d")
+image = 1
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece02" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(59, 30)
+script = ExtResource("6_m8y1d")
+image = 2
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece03" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(75, 30)
+script = ExtResource("6_m8y1d")
+image = 3
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece04" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(99, 30)
+script = ExtResource("6_m8y1d")
+image = 4
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece05" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(115, 30)
+script = ExtResource("6_m8y1d")
+image = 5
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece06" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(131, 30)
+script = ExtResource("6_m8y1d")
+image = 6
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece07" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(147, 30)
+script = ExtResource("6_m8y1d")
+image = 7
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece08" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(27, 54)
+script = ExtResource("6_m8y1d")
+image = 8
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece09" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(43, 54)
+script = ExtResource("6_m8y1d")
+image = 9
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece10" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(59, 54)
+script = ExtResource("6_m8y1d")
+image = 10
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece11" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(75, 54)
+script = ExtResource("6_m8y1d")
+image = 11
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece12" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(99, 54)
+script = ExtResource("6_m8y1d")
+image = 12
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece13" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(115, 54)
+script = ExtResource("6_m8y1d")
+image = 13
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece14" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(131, 54)
+script = ExtResource("6_m8y1d")
+image = 14
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
+
+[node name="Piece15" type="Area2D" parent="Pieces" instance=ExtResource("5_ccote")]
+position = Vector2(147, 54)
+script = ExtResource("6_m8y1d")
+image = 15
+metadata/_custom_type_script = "uid://bfs8mfsp5sbig"
 
 [node name="Front Box" parent="." node_paths=PackedStringArray("start_marker", "finish_marker") instance=ExtResource("4_0nhnh")]
 z_index = 100
