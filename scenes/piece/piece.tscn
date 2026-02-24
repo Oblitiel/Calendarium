@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ikddowsiq53w"]
+[gd_scene load_steps=6 format=3 uid="uid://ikddowsiq53w"]
 
 [ext_resource type="Script" uid="uid://bg7lmyujrau8n" path="res://scenes/piece/piece.gd" id="1_s58gp"]
-[ext_resource type="Texture2D" uid="uid://bgeryobaq5aqa" path="res://assets/calendarium_pieces.png" id="2_h2rng"]
-[ext_resource type="PackedScene" uid="uid://cc6mtwdmge1y3" path="res://scenes/piece/subpiece.tscn" id="3_i7cdl"]
+[ext_resource type="Texture2D" uid="uid://bgeryobaq5aqa" path="res://scenes/piece/pieces_atlas.png" id="2_h2rng"]
+[ext_resource type="PackedScene" uid="uid://cc6mtwdmge1y3" path="res://scenes/piece/subpiece/subpiece.tscn" id="3_i7cdl"]
+[ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://nodes/random_audio_player.gd" id="4_ajk4a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iq6nv"]
 size = Vector2(16, 24)
@@ -30,3 +31,8 @@ position = Vector2(-4, -6)
 
 [node name="SubpieceBR" parent="." instance=ExtResource("3_i7cdl")]
 position = Vector2(-4, 6)
+
+[node name="Random Audio Player" type="Node" parent="."]
+script = ExtResource("4_ajk4a")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Random Audio Player"]
