@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cpt42lgp2bhq4"]
+[gd_scene load_steps=25 format=3 uid="uid://cpt42lgp2bhq4"]
 
 [ext_resource type="Script" uid="uid://blavddmtriurf" path="res://nodes/grab_controller/grab_controller_hold.gd" id="1_2k7mi"]
 [ext_resource type="PackedScene" uid="uid://bntf0dpa7ytwl" path="res://scenes/level/box/calendarium_back_box.tscn" id="2_3ctw5"]
@@ -7,7 +7,23 @@
 [ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://scenes/level/solution_verifier.gd" id="5_3ctw5"]
 [ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://scenes/level/verify_solution/number_verifier.tscn" id="5_81fc3"]
 [ext_resource type="PackedScene" uid="uid://ikddowsiq53w" path="res://scenes/piece/piece.tscn" id="5_ccote"]
+[ext_resource type="Resource" uid="uid://kiwp0r3jhsd2" path="res://resources/piece_composition/Piece0.tres" id="6_243ue"]
+[ext_resource type="Resource" uid="uid://4sggtxsf8nje" path="res://resources/piece_composition/Piece1.tres" id="7_wn70e"]
 [ext_resource type="PackedScene" uid="uid://b15576d84s1vt" path="res://scenes/level/win_animation.tscn" id="8_0nhnh"]
+[ext_resource type="Resource" uid="uid://42lfsvldes6d" path="res://resources/piece_composition/Piece2.tres" id="8_klo2k"]
+[ext_resource type="Resource" uid="uid://fh5wbh0ps44m" path="res://resources/piece_composition/Piece3.tres" id="9_yedhw"]
+[ext_resource type="Resource" uid="uid://bg2w1ljqb13gw" path="res://resources/piece_composition/Piece4.tres" id="10_872fp"]
+[ext_resource type="Resource" uid="uid://hvqvq02ba7vq" path="res://resources/piece_composition/Piece5.tres" id="11_nvjr5"]
+[ext_resource type="Resource" uid="uid://lx28w0r0kkxx" path="res://resources/piece_composition/Piece6.tres" id="12_isufr"]
+[ext_resource type="Resource" uid="uid://b7vowka1pnk3c" path="res://resources/piece_composition/Piece7.tres" id="13_l335g"]
+[ext_resource type="Resource" uid="uid://dcyftlyqv5ji1" path="res://resources/piece_composition/Piece8.tres" id="14_2xgbs"]
+[ext_resource type="Resource" uid="uid://b8uklfjx5r6m7" path="res://resources/piece_composition/Piece9.tres" id="15_aujeo"]
+[ext_resource type="Resource" uid="uid://d3fyiswutjx2n" path="res://resources/piece_composition/Piece10.tres" id="16_5vvqg"]
+[ext_resource type="Resource" uid="uid://j6vgjng2bssq" path="res://resources/piece_composition/Piece11.tres" id="17_mb1m7"]
+[ext_resource type="Resource" uid="uid://bwt3vsnnrsm6a" path="res://resources/piece_composition/Piece12.tres" id="18_lu25h"]
+[ext_resource type="Resource" uid="uid://ccbhlmwhh6suf" path="res://resources/piece_composition/Piece13.tres" id="19_tuiq4"]
+[ext_resource type="Resource" uid="uid://cqj0g41viarsd" path="res://resources/piece_composition/Piece14.tres" id="20_xftaw"]
+[ext_resource type="Resource" uid="uid://ce7ygk6cy1of3" path="res://resources/piece_composition/Piece15.tres" id="21_wt2cx"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_2k7mi")
@@ -30,66 +46,82 @@ texture = ExtResource("3_0nhnh")
 
 [node name="Piece00" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(27, 30)
+piece_composition = ExtResource("6_243ue")
 
 [node name="Piece01" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(43, 30)
 image = 1
+piece_composition = ExtResource("7_wn70e")
 
 [node name="Piece02" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(59, 30)
 image = 2
+piece_composition = ExtResource("8_klo2k")
 
 [node name="Piece03" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(75, 30)
 image = 3
+piece_composition = ExtResource("9_yedhw")
 
 [node name="Piece04" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(99, 30)
 image = 4
+piece_composition = ExtResource("10_872fp")
 
 [node name="Piece05" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(115, 30)
 image = 5
+piece_composition = ExtResource("11_nvjr5")
 
 [node name="Piece06" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(131, 30)
 image = 6
+piece_composition = ExtResource("12_isufr")
 
 [node name="Piece07" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(147, 30)
 image = 7
+piece_composition = ExtResource("13_l335g")
 
 [node name="Piece08" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(27, 54)
 image = 8
+piece_composition = ExtResource("14_2xgbs")
 
 [node name="Piece09" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(43, 54)
 image = 9
+piece_composition = ExtResource("15_aujeo")
 
 [node name="Piece10" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(59, 54)
 image = 10
+piece_composition = ExtResource("16_5vvqg")
 
 [node name="Piece11" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(75, 54)
 image = 11
+piece_composition = ExtResource("17_mb1m7")
 
 [node name="Piece12" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(99, 54)
 image = 12
+piece_composition = ExtResource("18_lu25h")
 
 [node name="Piece13" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(115, 54)
 image = 13
+piece_composition = ExtResource("19_tuiq4")
 
 [node name="Piece14" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(131, 54)
 image = 14
+piece_composition = ExtResource("20_xftaw")
 
 [node name="Piece15" parent="Pieces" instance=ExtResource("5_ccote")]
 position = Vector2(147, 54)
 image = 15
+piece_composition = ExtResource("21_wt2cx")
 
 [node name="Front Box" parent="." node_paths=PackedStringArray("start_marker", "finish_marker") instance=ExtResource("4_0nhnh")]
 z_index = 100
@@ -121,9 +153,9 @@ position = Vector2(52, 0)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -100
-offset_left = -18.0
+offset_left = -24.0
 offset_top = -21.0
-offset_right = 198.0
+offset_right = 192.0
 offset_bottom = 110.0
 mouse_filter = 2
 color = Color(0.56046665, 0.37799996, 0.7, 1)
