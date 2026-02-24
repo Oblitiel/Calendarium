@@ -14,3 +14,7 @@ func _ready() -> void:
 	$SubpieceTL.data=piece_composition.top_left
 	$SubpieceTR.data=piece_composition.top_right
 	$SubpieceBR.data=piece_composition.bottom_right
+
+func release() -> void:
+	super()
+	$AudioStreamPlayer2D.play()

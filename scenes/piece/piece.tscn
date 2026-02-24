@@ -1,9 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://ikddowsiq53w"]
+[gd_scene load_steps=10 format=3 uid="uid://ikddowsiq53w"]
 
 [ext_resource type="Script" uid="uid://bg7lmyujrau8n" path="res://scenes/piece/piece.gd" id="1_s58gp"]
 [ext_resource type="Texture2D" uid="uid://bgeryobaq5aqa" path="res://scenes/piece/pieces_atlas.png" id="2_h2rng"]
 [ext_resource type="PackedScene" uid="uid://cc6mtwdmge1y3" path="res://scenes/piece/subpiece/subpiece.tscn" id="3_i7cdl"]
 [ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://nodes/random_audio_player.gd" id="4_ajk4a"]
+[ext_resource type="AudioStream" uid="uid://bucngqwj1udx4" path="res://scenes/piece/piece_drop_01.wav" id="5_vgift"]
+[ext_resource type="AudioStream" uid="uid://druqmbfuasyrg" path="res://scenes/piece/piece_drop_02.wav" id="6_yaqlj"]
+[ext_resource type="AudioStream" uid="uid://ccjbwbt0cw5pg" path="res://scenes/piece/piece_drop_03.wav" id="7_4gspf"]
+[ext_resource type="AudioStream" uid="uid://bvreveqnr8p16" path="res://scenes/piece/piece_drop_04.wav" id="8_mtht4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iq6nv"]
 size = Vector2(16, 24)
@@ -32,7 +36,13 @@ position = Vector2(-4, -6)
 [node name="SubpieceBR" parent="." instance=ExtResource("3_i7cdl")]
 position = Vector2(-4, 6)
 
-[node name="Random Audio Player" type="Node" parent="."]
-script = ExtResource("4_ajk4a")
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_mtht4")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Random Audio Player"]
+[node name="Random Audio Player" type="Node" parent="AudioStreamPlayer2D"]
+script = ExtResource("4_ajk4a")
+posible_sounds = Array[AudioStream]([ExtResource("5_vgift"), ExtResource("6_yaqlj"), ExtResource("7_4gspf"), ExtResource("8_mtht4")])
+min_pitch_scale_mod = 0.65
+max_pitch_scale_mod = 0.9
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
