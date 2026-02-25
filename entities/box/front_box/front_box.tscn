@@ -1,12 +1,12 @@
 [gd_scene load_steps=9 format=3 uid="uid://cxvw5rkiipuxd"]
 
-[ext_resource type="Script" uid="uid://drlga23le6p4i" path="res://scenes/level/box/front_box.gd" id="1_1dmoo"]
+[ext_resource type="Script" uid="uid://drlga23le6p4i" path="res://entities/box/front_box/front_box.gd" id="1_1dmoo"]
 [ext_resource type="Texture2D" uid="uid://bigmahw86iayl" path="res://assets/calendarium_front_box.png" id="2_5lmp3"]
 [ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://addons/random_audio_player/random_audio_player.gd" id="3_8bryg"]
-[ext_resource type="AudioStream" uid="uid://ce57cnsi4or1i" path="res://scenes/piece/sfx/plastic_drag_01.wav" id="4_i3xgd"]
-[ext_resource type="AudioStream" uid="uid://88nndnt6gdri" path="res://scenes/piece/sfx/plastic_drag_02.wav" id="5_sfhlu"]
-[ext_resource type="AudioStream" uid="uid://dfme1w48mvui5" path="res://scenes/piece/sfx/plastic_drag_03.wav" id="6_7jwj7"]
-[ext_resource type="AudioStream" uid="uid://dg3f35x3gcj57" path="res://scenes/piece/sfx/plastic_drag_04.wav" id="7_heh86"]
+[ext_resource type="AudioStream" uid="uid://ce57cnsi4or1i" path="res://entities/piece/sfx/plastic_drag_01.wav" id="4_i3xgd"]
+[ext_resource type="AudioStream" uid="uid://88nndnt6gdri" path="res://entities/piece/sfx/plastic_drag_02.wav" id="5_sfhlu"]
+[ext_resource type="AudioStream" uid="uid://dfme1w48mvui5" path="res://entities/piece/sfx/plastic_drag_03.wav" id="6_7jwj7"]
+[ext_resource type="AudioStream" uid="uid://dg3f35x3gcj57" path="res://entities/piece/sfx/plastic_drag_04.wav" id="7_heh86"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2apt8"]
 size = Vector2(140, 52)

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cdknh381lfe1q"
-path="res://.godot/imported/piano_win.wav-7dc38737055191a15db0055d4c362758.sample"
+path="res://.godot/imported/piano_win.wav-ce0c472564d71d6f34ed1b3706cd9f66.sample"
 
 [deps]
 
-source_file="res://scenes/level/piano_win.wav"
-dest_files=["res://.godot/imported/piano_win.wav-7dc38737055191a15db0055d4c362758.sample"]
+source_file="res://entities/win_animation/piano_win.wav"
+dest_files=["res://.godot/imported/piano_win.wav-ce0c472564d71d6f34ed1b3706cd9f66.sample"]
 
 [params]
 

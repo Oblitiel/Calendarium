@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://b15576d84s1vt"]
 
 [ext_resource type="Texture2D" uid="uid://cscju7t6tekv2" path="res://assets/win_text.png" id="1_4v3w0"]
-[ext_resource type="Script" uid="uid://cis7t7pe2dgvv" path="res://scenes/level/win_animation.gd" id="1_u2jwb"]
-[ext_resource type="AudioStream" uid="uid://cdknh381lfe1q" path="res://scenes/level/piano_win.wav" id="3_0mvyy"]
+[ext_resource type="Script" uid="uid://cis7t7pe2dgvv" path="res://entities/win_animation/win_animation.gd" id="1_u2jwb"]
+[ext_resource type="AudioStream" uid="uid://cdknh381lfe1q" path="res://entities/win_animation/piano_win.wav" id="3_0mvyy"]
 
 [sub_resource type="Curve" id="Curve_3ctw5"]
 _limits = [-1.0, 1.0, 0.0, 1.0]

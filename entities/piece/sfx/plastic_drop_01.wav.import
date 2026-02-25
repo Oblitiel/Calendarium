@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bnhb1gbk3wjb7"
-path="res://.godot/imported/plastic_drop_01.wav-4b9e787ff30eba2dd5f09fb31b417b07.sample"
+path="res://.godot/imported/plastic_drop_01.wav-e7d6bb7a5eae03f309860a6090f1c15e.sample"
 
 [deps]
 
-source_file="res://scenes/piece/sfx/plastic_drop_01.wav"
-dest_files=["res://.godot/imported/plastic_drop_01.wav-4b9e787ff30eba2dd5f09fb31b417b07.sample"]
+source_file="res://entities/piece/sfx/plastic_drop_01.wav"
+dest_files=["res://.godot/imported/plastic_drop_01.wav-e7d6bb7a5eae03f309860a6090f1c15e.sample"]
 
 [params]
 

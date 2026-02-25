@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dc121pwv5gmm4"]
 
-[ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://scenes/level/solution_verifier.gd" id="1_jkic5"]
-[ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://scenes/level/verify_solution/number_verifier.tscn" id="2_1qw4k"]
+[ext_resource type="Script" uid="uid://oe627f48xoqt" path="res://systems/solution_verifier/solution_verifier.gd" id="1_jkic5"]
+[ext_resource type="PackedScene" uid="uid://b0lr3xuk7tx6p" path="res://systems/solution_verifier/number_verifier.tscn" id="2_1qw4k"]
 
 [node name="SolutionVerifier" type="Node2D"]
 script = ExtResource("1_jkic5")
