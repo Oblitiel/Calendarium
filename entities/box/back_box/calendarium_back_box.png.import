@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd7nvirv3aul6"
-path="res://.godot/imported/calendarium_back_box.png-029436ed124c8d111c679f841eb525a1.ctex"
+path="res://.godot/imported/calendarium_back_box.png-bbd413d7bcd05e6aad1de6fa98e12276.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/calendarium_back_box.png"
-dest_files=["res://.godot/imported/calendarium_back_box.png-029436ed124c8d111c679f841eb525a1.ctex"]
+source_file="res://entities/box/back_box/calendarium_back_box.png"
+dest_files=["res://.godot/imported/calendarium_back_box.png-bbd413d7bcd05e6aad1de6fa98e12276.ctex"]
 
 [params]
 
