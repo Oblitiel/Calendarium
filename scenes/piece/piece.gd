@@ -17,4 +17,4 @@ func _ready() -> void:
 
 func release() -> void:
 	super()
-	$AudioStreamPlayer2D.play()
+	$AudioStreamPlayer.play()
