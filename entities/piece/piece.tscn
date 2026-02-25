@@ -1,17 +1,17 @@
 [gd_scene load_steps=14 format=3 uid="uid://ikddowsiq53w"]
 
-[ext_resource type="Script" uid="uid://bg7lmyujrau8n" path="res://scenes/piece/piece.gd" id="1_s58gp"]
-[ext_resource type="Texture2D" uid="uid://bgeryobaq5aqa" path="res://scenes/piece/pieces_atlas.png" id="2_h2rng"]
-[ext_resource type="PackedScene" uid="uid://cc6mtwdmge1y3" path="res://scenes/piece/subpiece/subpiece.tscn" id="3_i7cdl"]
+[ext_resource type="Script" uid="uid://bg7lmyujrau8n" path="res://entities/piece/piece.gd" id="1_s58gp"]
+[ext_resource type="Texture2D" uid="uid://bgeryobaq5aqa" path="res://entities/piece/pieces_atlas.png" id="2_h2rng"]
+[ext_resource type="PackedScene" uid="uid://cc6mtwdmge1y3" path="res://entities/piece/subpiece/subpiece.tscn" id="3_i7cdl"]
 [ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://addons/random_audio_player/random_audio_player.gd" id="4_ajk4a"]
-[ext_resource type="AudioStream" uid="uid://bnhb1gbk3wjb7" path="res://scenes/piece/sfx/plastic_drop_01.wav" id="5_vgift"]
-[ext_resource type="AudioStream" uid="uid://dldflhoixr3gs" path="res://scenes/piece/sfx/plastic_drop_02.wav" id="6_yaqlj"]
-[ext_resource type="AudioStream" uid="uid://cspombc4hmsr3" path="res://scenes/piece/sfx/plastic_drop_03.wav" id="7_4gspf"]
-[ext_resource type="AudioStream" uid="uid://ywemi11l01bs" path="res://scenes/piece/sfx/plastic_drop_04.wav" id="8_mtht4"]
-[ext_resource type="AudioStream" uid="uid://ce57cnsi4or1i" path="res://scenes/piece/sfx/plastic_drag_01.wav" id="9_3up4a"]
-[ext_resource type="AudioStream" uid="uid://88nndnt6gdri" path="res://scenes/piece/sfx/plastic_drag_02.wav" id="10_yho5c"]
-[ext_resource type="AudioStream" uid="uid://dfme1w48mvui5" path="res://scenes/piece/sfx/plastic_drag_03.wav" id="11_m1qdd"]
-[ext_resource type="AudioStream" uid="uid://dg3f35x3gcj57" path="res://scenes/piece/sfx/plastic_drag_04.wav" id="12_30h2f"]
+[ext_resource type="AudioStream" uid="uid://bnhb1gbk3wjb7" path="res://entities/piece/sfx/plastic_drop_01.wav" id="5_vgift"]
+[ext_resource type="AudioStream" uid="uid://dldflhoixr3gs" path="res://entities/piece/sfx/plastic_drop_02.wav" id="6_yaqlj"]
+[ext_resource type="AudioStream" uid="uid://cspombc4hmsr3" path="res://entities/piece/sfx/plastic_drop_03.wav" id="7_4gspf"]
+[ext_resource type="AudioStream" uid="uid://ywemi11l01bs" path="res://entities/piece/sfx/plastic_drop_04.wav" id="8_mtht4"]
+[ext_resource type="AudioStream" uid="uid://ce57cnsi4or1i" path="res://entities/piece/sfx/plastic_drag_01.wav" id="9_3up4a"]
+[ext_resource type="AudioStream" uid="uid://88nndnt6gdri" path="res://entities/piece/sfx/plastic_drag_02.wav" id="10_yho5c"]
+[ext_resource type="AudioStream" uid="uid://dfme1w48mvui5" path="res://entities/piece/sfx/plastic_drag_03.wav" id="11_m1qdd"]
+[ext_resource type="AudioStream" uid="uid://dg3f35x3gcj57" path="res://entities/piece/sfx/plastic_drag_04.wav" id="12_30h2f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iq6nv"]
 size = Vector2(16, 24)
@@ -41,8 +41,8 @@ position = Vector2(-4, -6)
 position = Vector2(-4, 6)
 
 [node name="Drop SFXs" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_yaqlj")
-pitch_scale = 0.80118215
+stream = ExtResource("7_4gspf")
+pitch_scale = 0.67581403
 bus = &"SFX"
 
 [node name="Random Audio Player" type="Node" parent="Drop SFXs"]
@@ -51,9 +51,9 @@ posible_sounds = Array[AudioStream]([ExtResource("5_vgift"), ExtResource("6_yaql
 pitch_deviation = 0.25
 
 [node name="Drag SFXs" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("12_30h2f")
+stream = ExtResource("11_m1qdd")
 volume_db = -2.5
-pitch_scale = 0.9061683
+pitch_scale = 1.1387091
 bus = &"SFX"
 
 [node name="RandomAudioPlayer" type="Node" parent="Drag SFXs"]

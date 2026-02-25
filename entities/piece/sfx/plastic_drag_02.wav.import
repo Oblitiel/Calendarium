@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://88nndnt6gdri"
-path="res://.godot/imported/plastic_drag_02.wav-8b0a37b6de17abae9f0e1f6da9f941d6.sample"
+path="res://.godot/imported/plastic_drag_02.wav-977cc390e21e9a01c08fcd9e48c25214.sample"
 
 [deps]
 
-source_file="res://scenes/piece/sfx/plastic_drag_02.wav"
-dest_files=["res://.godot/imported/plastic_drag_02.wav-8b0a37b6de17abae9f0e1f6da9f941d6.sample"]
+source_file="res://entities/piece/sfx/plastic_drag_02.wav"
+dest_files=["res://.godot/imported/plastic_drag_02.wav-977cc390e21e9a01c08fcd9e48c25214.sample"]
 
 [params]
 
