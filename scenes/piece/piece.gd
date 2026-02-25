@@ -8,6 +8,9 @@ extends GrabbableItem
 
 @export var piece_composition : PieceComposition
 
+@onready var drop_sfxs: AudioStreamPlayer = $"Drop SFXs"
+@onready var drag_sfxs: AudioStreamPlayer = $"Drag SFXs"
+
 func _ready() -> void:
 	super()
 	$SubpieceBL.data=piece_composition.bottom_left
@@ -15,6 +18,10 @@ func _ready() -> void:
 	$SubpieceTR.data=piece_composition.top_right
 	$SubpieceBR.data=piece_composition.bottom_right
 
+func grab(local_position : Vector2 = get_local_mouse_position()) -> void:
+	super(local_position)
+	drag_sfxs.play()
+
 func release() -> void:
 	super()
-	$AudioStreamPlayer.play()
+	drop_sfxs.play()
