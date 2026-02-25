@@ -23,6 +23,10 @@ Game="*res://nodes/game.gd"
 window/size/mode=2
 window/stretch/mode="viewport"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/random_audio_player/plugin.cfg")
+
 [input]
 
 grab={

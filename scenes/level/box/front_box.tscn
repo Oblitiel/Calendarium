@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://drlga23le6p4i" path="res://scenes/level/box/front_box.gd" id="1_1dmoo"]
 [ext_resource type="Texture2D" uid="uid://bigmahw86iayl" path="res://assets/calendarium_front_box.png" id="2_5lmp3"]
-[ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://nodes/random_audio_player.gd" id="3_8bryg"]
+[ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://addons/random_audio_player/random_audio_player.gd" id="3_8bryg"]
 [ext_resource type="AudioStream" uid="uid://ce57cnsi4or1i" path="res://scenes/piece/sfx/plastic_drag_01.wav" id="4_i3xgd"]
 [ext_resource type="AudioStream" uid="uid://88nndnt6gdri" path="res://scenes/piece/sfx/plastic_drag_02.wav" id="5_sfhlu"]
 [ext_resource type="AudioStream" uid="uid://dfme1w48mvui5" path="res://scenes/piece/sfx/plastic_drag_03.wav" id="6_7jwj7"]
@@ -29,9 +29,9 @@ texture = ExtResource("2_5lmp3")
 shape = SubResource("RectangleShape2D_2apt8")
 
 [node name="Drag SFXs" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_heh86")
+stream = ExtResource("4_i3xgd")
 volume_db = -6.0
-pitch_scale = 0.4
+pitch_scale = 0.48733798
 bus = &"SFX"
 
 [node name="RandomAudioPlayer" type="Node" parent="Drag SFXs"]

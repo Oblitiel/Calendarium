@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bg7lmyujrau8n" path="res://scenes/piece/piece.gd" id="1_s58gp"]
 [ext_resource type="Texture2D" uid="uid://bgeryobaq5aqa" path="res://scenes/piece/pieces_atlas.png" id="2_h2rng"]
 [ext_resource type="PackedScene" uid="uid://cc6mtwdmge1y3" path="res://scenes/piece/subpiece/subpiece.tscn" id="3_i7cdl"]
-[ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://nodes/random_audio_player.gd" id="4_ajk4a"]
+[ext_resource type="Script" uid="uid://c4cr314seoil5" path="res://addons/random_audio_player/random_audio_player.gd" id="4_ajk4a"]
 [ext_resource type="AudioStream" uid="uid://bnhb1gbk3wjb7" path="res://scenes/piece/sfx/plastic_drop_01.wav" id="5_vgift"]
 [ext_resource type="AudioStream" uid="uid://dldflhoixr3gs" path="res://scenes/piece/sfx/plastic_drop_02.wav" id="6_yaqlj"]
 [ext_resource type="AudioStream" uid="uid://cspombc4hmsr3" path="res://scenes/piece/sfx/plastic_drop_03.wav" id="7_4gspf"]
@@ -41,7 +41,8 @@ position = Vector2(-4, -6)
 position = Vector2(-4, 6)
 
 [node name="Drop SFXs" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_vgift")
+stream = ExtResource("6_yaqlj")
+pitch_scale = 0.80118215
 bus = &"SFX"
 
 [node name="Random Audio Player" type="Node" parent="Drop SFXs"]
@@ -50,7 +51,9 @@ posible_sounds = Array[AudioStream]([ExtResource("5_vgift"), ExtResource("6_yaql
 pitch_deviation = 0.25
 
 [node name="Drag SFXs" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_30h2f")
 volume_db = -2.5
+pitch_scale = 0.9061683
 bus = &"SFX"
 
 [node name="RandomAudioPlayer" type="Node" parent="Drag SFXs"]

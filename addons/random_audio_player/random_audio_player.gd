@@ -1,6 +1,6 @@
 @tool
-class_name RandomAudioPlayer
 extends Node
+class_name RandomAudioPlayer
 
 @export_group("Configuration")
 @export var audio_player_reference : Node:
