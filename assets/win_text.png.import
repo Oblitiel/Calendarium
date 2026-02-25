@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgeryobaq5aqa"
-path="res://.godot/imported/calendarium_pieces.png-2972cc05a8205bf09eabdb5d00074a54.ctex"
+uid="uid://cscju7t6tekv2"
+path="res://.godot/imported/win_text.png-1422fa098cd9f346e73b7c63f5d107ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/calendarium_pieces.png"
-dest_files=["res://.godot/imported/calendarium_pieces.png-2972cc05a8205bf09eabdb5d00074a54.ctex"]
+source_file="res://assets/win_text.png"
+dest_files=["res://.godot/imported/win_text.png-1422fa098cd9f346e73b7c63f5d107ce.ctex"]
 
 [params]
 

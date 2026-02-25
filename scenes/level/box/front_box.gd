@@ -4,6 +4,8 @@ extends Node2D
 @export var finish_marker : Marker2D
 @export_range(0,1,0.1,"or_greater","suffix:s") var positionig_time = 0.5
 
+@onready var drag_sfxs: AudioStreamPlayer = $"Drag SFXs"
+
 var finished : bool = false
 
 func _on_mouse_click(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
@@ -16,3 +18,5 @@ func _on_mouse_click(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 			Game.check_win()
 		else:
 			tween.tween_property(self,"global_position",start_marker.global_position,positionig_time)
+		
+		drag_sfxs.play()
